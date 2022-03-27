@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Spartan:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- first we have to create a navbar  -->
+    <section id="header" >
+        <!-- create an anchor tag to insert logo -->
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <!-- now we want to create nav links -->
+        <div>
+            <ul id="navbar" >
+                <!-- i want our home page to be highlighted thats why it should have active class -->
+                <li><a  href="index.html">Home</a></li>
+                <!-- on shop page i dont need the active class on index i want it on shop -->
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            
+           
+            <!-- we dont want bullet point so simply remove li -->
+        </div>
+
+    </section>
+
+    <!-- nav bar section is done  -->
+    <section id="prodetails" class="section-p1" >
+        <!-- two diff section ha ek left m image right  details -->
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <!-- now create div inside this div for small images -->
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / T-Shirts</h6>
+            <h4>Men's Fashion T Shirts</h4>
+            <h2>$139.00</h2>
+            <!-- select size <section> -->
+                 <select >
+                     <option >Select Size</option>
+                    
+                     <option >XL</option>
+                     <option >XXL</option>
+                     <option >Small</option>
+                     <option >Large</option>
+                 </select>
+                 <input type="number" value="1">
+                 <button class="normal">Add To Cart</button>
+                 <h4>Product Details</h4>
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, ipsam consequatur mollitia ut, fugiat natus suscipit, esse sapiente voluptatibus molestiae facere corrupti dolorem dolore neque non odit libero sunt consequuntur optio! Dolorum, repudiandae odit iste possimus laborum similique cupiditate voluptatum!</span>
+
+        </div>
+
+    </section>
+
+
+    <section id="product1" class="section-p1">
+        <!-- i want to add some padding as in features section so i will add same class of section-p1 -->
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <!-- in this all products will be contained -->
+            <div class="pro">
+                <!-- first product -->
+                <!-- first we have our image -->
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <!-- another div tag for description -->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <!-- now i tag for adding star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <!-- i want to add some size to image and also want to make our text center -->
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <!-- after our description we want to add a shop cart -->
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <!-- just style one card nicely and then copy in others  -->
+            <div class="pro">
+                <!-- first product -->
+                <!-- first we have our image -->
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <!-- another div tag for description -->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <!-- now i tag for adding star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <!-- i want to add some size to image and also want to make our text center -->
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <!-- after our description we want to add a shop cart -->
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <!-- first product -->
+                <!-- first we have our image -->
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <!-- another div tag for description -->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <!-- now i tag for adding star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <!-- i want to add some size to image and also want to make our text center -->
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <!-- after our description we want to add a shop cart -->
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <!-- first product -->
+                <!-- first we have our image -->
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <!-- another div tag for description -->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <!-- now i tag for adding star -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <!-- i want to add some size to image and also want to make our text center -->
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <!-- after our description we want to add a shop cart -->
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+         
+        </div>
+    </section>
+
+
+
+   
+
+<section id="newsletter"  class="section-p1 section-m1">
+    <!-- create two div tags one for text other for signup taki side by side aa sake -->
+    <div class="newstext">
+        <h4>
+            Sign Up For Newsletters
+        </h4>
+        <p>Get E-mail updates about our latest shop and <span> special offers</span> </p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<footer class="section-p1 section-m1">
+    <!-- 4 diffrent columns -->
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>  562 Wellington Road,Street 32 , San Francisco </p>
+        <p><strong>Phone:</strong> +01 222 365 / (+91) 01 2345 6789 </p>
+        <p><strong>Hours:</strong>  10.00 - 18.00, Mon - Sat </p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon"> 
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+             <!-- i also want to make click on icon take to the site page -->
+           
+        </div>
+       
+    </div>
+    
+
+    <!-- second column -->
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <!-- use a tag because these a tag are the links -->
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <!-- third column -->
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <!-- use a tag because these a tag are the links -->
+        <a href="#">View Carts</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <!-- in this row div i will be adding two buttons in a row -->
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payments Gateway</p>
+        <img src="img/pay/pay.png" alt="">
+        <!-- in these three images may be you can try to create a button  -->
+    </div>
+   <div>
+        <p class="copyright"><span>&#169;</span>2021, Teach2 etc - HTML CSS Eccomerce Template</p>
+    </div>
+    
+<script src="index.js"></script>
+  
+</footer>
+<script >
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+
+    // anyone clicks on our small image i want to change our big image src with small image
+    smallimg[0].onclick = function () {
+        MainImg.src = smallimg[0].src;
+        // anyone click on 1st image
+        
+    }
+    smallimg[1].onclick = function () {
+        MainImg.src = smallimg[1].src;
+        // anyone click on 1st image
+        
+    }
+    smallimg[2].onclick = function () {
+        MainImg.src = smallimg[2].src;
+        // anyone click on 1st image
+        
+    }
+    smallimg[3].onclick = function () {
+        MainImg.src = smallimg[3].src;
+        // anyone click on 1st image
+        
+    }
+</script>
+
+   
+</body>
+
+</html>
